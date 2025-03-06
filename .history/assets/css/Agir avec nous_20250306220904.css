@@ -1,0 +1,265 @@
+h1 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+main {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+main p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    text-align: justify;
+}
+
+.BoutonsForm {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.BoutonsForm div {
+    width: 28%;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.BoutonsForm a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.BoutonsForm a:hover {
+    background-color: #163d59;
+    color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.Color1 {
+    background-color: #BDE1FA;
+}
+
+.Color2 {
+    background-color: #A2BEF0;
+}
+
+.Bannière img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.Bannière {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.Bloc, .Bloc2, .Bloc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.Bloc div, .Bloc2 div, .Bloc3 div {
+    flex: 0.8;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Bloc img, .Bloc2 img, .Bloc3 img {
+    width: 100%; /* Augmenter la largeur des images */
+    max-height: 350px;
+    object-fit: contain; /* Modification pour éviter que les images soient coupées */
+}
+
+.Bloc p, .Bloc2 p, .Bloc3 p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    text-align: justify;
+    margin: 0;
+    padding: 10px;
+}
+
+.Bloc h3, .Bloc2 h3, .Bloc3 h3 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.Bloc, .Bloc3 {
+    background-color: #BDE1FA;
+}
+
+.Bloc2 {
+    background-color: #A2BEF0;
+}
+
+.End {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Rejoindre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.Rejoindre a {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: #BDE1FA;
+}
+
+.Rejoindre a:hover {
+    background-color: #163d59;
+    color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.Inscrire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.Inscrire a {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    background-color: #A2BEF0;
+}
+
+.Inscrire a:hover {
+    background-color: #163d59;
+    color: white;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1240px) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    .BoutonsForm {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .BoutonsForm div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .BoutonsForm a {
+        font-size: 16px;
+    }
+
+    .Bannière img {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .Bloc, .Bloc2, .Bloc3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Bloc div, .Bloc2 div, .Bloc3 div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Bloc img, .Bloc2 img, .Bloc3 img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .End {
+        justify-content: center;
+    }
+
+    .Rejoindre a, .Inscrire a {
+        width: 80%;
+    }
+}

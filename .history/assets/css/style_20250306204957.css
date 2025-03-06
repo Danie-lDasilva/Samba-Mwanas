@@ -1,0 +1,675 @@
+/* Header */
+
+body {
+    margin: 0;
+    background-color: #FFFDF8;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+header ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+header li {
+    list-style: none;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    color: black;
+    font-size: 25px;
+}
+
+/* Header */
+header a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    color: black;
+    font-size: 25px;
+    white-space: nowrap; 
+    position: relative;
+    transition: color 0.3s ease; 
+    padding: 5px 15px;
+}
+
+header a:not(:has(img))::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px); 
+    height: calc(100% + 10px); 
+    top: -5px; 
+    left: -5px; 
+    border-radius: 10px;
+    border: 3px solid transparent;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+header a:not(:has(img))::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px); 
+    top: -5px; 
+    left: -5px; 
+    border-radius: 10px;
+    border: 3px solid transparent;
+    visibility: hidden;
+    z-index: 0;
+}
+
+header a:not(:has(img)):hover {
+    color: #6495ED;
+}
+
+header a:not(:has(img)):hover::before,
+header a:not(:has(img)):hover::after {
+    visibility: visible;
+    transform: scale(1);
+}
+
+header nav {
+    width: 70%;
+    height: 100%;
+}
+
+.Logo {
+    height: 90px;
+    width: auto;
+}
+
+.Logo img {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    a {
+        font-size: 20px; 
+    }
+}
+
+/*Landing page*/
+
+.Landing {
+    position: relative;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Landing picture,
+.Landing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.Landing h1 {
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1.2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Landing h1 span {
+    font-size: 0.5em;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .Landing h1 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+
+    .Landing h1 span {
+        font-size: 0.9em;
+        line-height: 1.2;
+    }
+}
+
+/*Infos*/
+.Infos p {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0;
+}
+
+.Infos article {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.Texte {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+}
+
+.Illu {
+    width: 30%;
+}
+
+.Illustrations {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.Illustrations img {
+    width: 90%;
+    height: auto;
+}
+
+/*Qui sommes nous?*/
+
+.Art1 {
+    background-color: rgb(124 198 254 / 50%);
+    height: auto;
+    min-height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ArtCoeur1 {
+    width: 60px;
+    rotate: 10deg;
+    height: auto;
+    position: relative;
+    left: 95%;
+}
+
+.ArtCoeur1 img {
+    width: 100%;
+    height: auto;
+}
+
+/*Notre histoire*/
+
+.Art2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Illu {
+    display: flex;
+    flex-direction: column;
+}
+
+.ArtCoeur2 {
+    width: 20%;
+}
+
+.ArtCoeur2 img {
+    width: 74px;
+    height: auto;
+}
+
+.Livre {
+    position: relative;
+    left: 15%;
+}
+
+/*Nos Missions */
+
+.Art3 {
+    background-color: rgb(162 190 241);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: auto;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HR1 {
+    width: 40%;
+    height: 3px;
+    border: none;
+    margin-top: 20px;
+    background-color: rgb(124 198 254 / 50%);
+}
+
+.HR2 {
+    width: 40%;
+    height: 3px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(162 190 241);
+}
+
+/*Faire un don*/
+
+.Don {
+    background-color: #6495ED;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    z-index: 5;
+    transform: rotate(270deg) translateY(-75px);
+    transition: all 0.3s ease;
+}
+
+.Don a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.Don:hover {
+    height: 80px;
+    background-color: #0056b3;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+    transform: rotate(270deg) translateY(-60px) translateX(-15px);
+}
+
+.Don:hover a {
+    color: white;
+}
+
+/*Notre équipe*/
+
+.NotreEquipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.NotreEquipe h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Ligne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 50px; /* Ajout d'une marge en bas pour éviter le chevauchement */
+}
+
+.Photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer les images horizontalement */
+    margin-bottom: 15px;
+}
+
+.Photo img {
+    width: 100%;
+    height: auto;
+}
+
+.Personne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    width: 23%; /* Ajustement pour 4 par 4 */
+}
+
+.Personne strong {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Personne p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Footer*/
+
+footer {
+    border-top: 2px solid black;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+    font-size: 15px;
+}
+
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.FooterCentre {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterInfos {
+    width: 20%;
+    height: auto;
+}
+
+.Lien li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.InfoMarge {
+    margin-bottom: 100px;
+}
+
+.Lien ul {
+    padding-left: 0;
+}
+
+.Lien a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    font-variation-settings: "wdth" 75;
+    color: black;
+}
+
+.titre {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0;
+}
+
+.FooterDon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.FooterDon a {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #A2BEF0;
+}
+
+.FooterDon:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.FooterDon:hover a {
+    color: white;
+    background-color: #0056b3;
+}
+
+.FooterLogo {
+    height: auto;
+    width: 55%;
+}
+
+.FooterDrapeau {
+    height: 30px;
+    width: auto;
+    padding-top: 10px;
+}
+
+.FooterContact {
+    display: flex;
+}
+
+.FooterContact p {
+    margin-left: 10px;
+}
+
+.FooterRéseaux {
+    margin-bottom: 60px;
+}
+
+.FooterRéseaux img {
+    width: 100%;
+    height: auto;
+}
+
+.FooterRéseaux ul {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.FooterRéseaux li {
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    header ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header li {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .Infos article {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .Ligne {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .Photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Personne {
+        margin-bottom: 50px;
+    }
+
+    .Footer {
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .FooterCentre,
+    .FooterInfos {
+        width: 100%;
+    }
+
+    .FooterDon {
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header li {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .Landing h1 {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+
+    .Landing h1 span {
+        font-size: 0.9em;
+        line-height: 1.2;
+    }
+
+    .Infos article {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Ligne {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Personne {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .Photo {
+        width: 120px; /* Augmentation de la taille des images */
+        height: 120px; /* Augmentation de la taille des images */
+    }
+
+    .Footer {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .FooterCentre,
+    .FooterInfos {
+        width: 100%;
+    }
+
+    .FooterDon {
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p, a {
+        font-size: 0.9em;
+    }
+}
