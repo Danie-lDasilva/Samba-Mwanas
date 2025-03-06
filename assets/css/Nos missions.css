@@ -1,0 +1,146 @@
+main {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-wrap: nowrap; /* Empêche les images de se compresser */
+    justify-content: space-between;
+    margin-bottom: 0; /* Supprime la marge en bas de la boîte */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    margin: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.box1 .image-container:hover strong,
+.box2 .image-container:hover strong {
+    display: none;
+}
+
+.box1 .image-container strong,
+.box2 .image-container strong {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 5px;
+    margin: 0;
+    width: calc(100% - 11px);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mali", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.custom-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    background-color: #BDE1FA;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.side-image {
+    height: 100%;
+    width: auto;
+}
+
+.center-text {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* Media queries pour rendre la mise en page responsive */
+@media (max-width: 1200px) {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .box1, .box2 {
+        flex-wrap: wrap; /* Permet aux images de se compresser en version mobile */
+    }
+    .image-container {
+        flex: 0 0 100%; /* Fixe la largeur des images à 100% en version mobile */
+        margin-bottom: 0; /* Supprime la marge en bas de chaque image en version mobile */
+        height: auto;
+        padding-bottom: 75%; /* Ratio 4:3 */
+    }
+}
