@@ -615,14 +615,8 @@ footer p {
     }
 
     .Don {
-        width: 100px;
-        height: 30px;
-        transform: rotate(270deg) translateY(-35px);
-    }
-
-    .Don a {
-        font-size: 12px;
-        text-align: center;
+        width: 750px;
+        height: 20px;
     }
 
     .Mobile {

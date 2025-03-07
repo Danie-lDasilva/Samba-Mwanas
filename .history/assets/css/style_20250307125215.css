@@ -617,7 +617,7 @@ footer p {
     .Don {
         width: 100px;
         height: 30px;
-        transform: rotate(270deg) translateY(-35px);
+        transform: rotate(270deg) translateY(-50px);
     }
 
     .Don a {
