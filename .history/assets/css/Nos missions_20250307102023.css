@@ -91,9 +91,9 @@ h1 {
 
 .box2 .image-container strong {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
     color: black;
     background-color: #a2bef1;
     padding: 5px;

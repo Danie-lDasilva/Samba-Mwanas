@@ -68,7 +68,8 @@ h1 {
     display: none;
 }
 
-.box1 .image-container strong{
+.box1 .image-container strong,
+.box2 .image-container strong {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -91,7 +92,7 @@ h1 {
 
 .box2 .image-container strong {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     color: black;
