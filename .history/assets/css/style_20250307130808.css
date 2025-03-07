@@ -648,10 +648,6 @@ footer p {
         margin: 5px 0;
     }
 
-    .Mobile a {
-        font-size: 15px;
-    }
-
     header nav:not(.Mobile) li:not(:has(img)) {
         display: none;
     }

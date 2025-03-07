@@ -641,15 +641,10 @@ footer p {
 
     .Mobile ul{
         flex-wrap: nowrap;
-        width: max-content
     }
 
     .Mobile li {
         margin: 5px 0;
-    }
-
-    .Mobile a {
-        font-size: 15px;
     }
 
     header nav:not(.Mobile) li:not(:has(img)) {
