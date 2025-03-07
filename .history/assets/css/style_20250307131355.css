@@ -1,3 +1,4 @@
+/* Header */
 body {
     margin: 0;
     background-color: #FFFDF8;
@@ -98,84 +99,9 @@ header nav {
     width: 100%;
 }
 
-/* ------------------------ Menu Burger ------------------------ */
- 
-.burger--toggler{
-    opacity: 0;
-    visibility: hidden;
-  }
-   
-  .overlay--burger{
-    cursor: pointer;
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(12, 12, 12 , 0.3);
-    transition: opacity 0.5s ease , visibility 0.5s ease ;
-  }
-  .overlay--burger.active{
-    opacity: 1;
-    visibility: visible;
-  }
-   
-  .menuBurger{
-    position: fixed;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 50%;
-    height: 100vh;
-    background-color: #FFFDF8;
-    border-bottom: 3px solid #0e0f0e;
-    border-right: 3px solid #0e0f0e;
-    transform: translateX(-150%);
-    transition : transform 0.3s cubic-bezier(0.73,0.11,0.67,0.84);
-  }
-   
-  .menuBurger__img{
-    margin-top: 50px;
-    display : flex;
-    justify-content : center;
-    align-items : center ;
-    width : 200px;
-    height : 200px;
-  }
-   
-  .menuBurger__img img{
-    width : 100%;
-    height : auto;
-  }
-   
-  .menuBurger ul{
-    list-style: none;
-    width: 100%;
-  }
-  .menuBurger li{
-    border-top: 1px solid #0e0f0e;
-    width: 100%;
-  }
-   
-   
-  .menuBurger a{
-    font-weight: 500;
-    display: block;
-    color: #0e0f0e;
-    text-decoration: none;
-    width: auto;
-    font-size: 20px;
-    margin: 30px 0px;
-    text-align: center;
-  }
-  .menuBurger.active{
-    transform: translateX(0);
-  }
-   
-   
-   
+.Mobile {
+    display: none;
+}
 
 .Logo {
     height: 60px;
@@ -699,48 +625,24 @@ footer p {
         text-align: center;
     }
 
-      .burger--toggler {
-        opacity: 1;
-        visibility: visible;
-        position: absolute;
-        z-index: 20;
-        top: 50px;
-        right: 32px;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        display : flex;
-        flex-direction: column;
-        justify-content : center;
-        align-items: center;
-        background: transparent;
-        outline: none;
-        border: none;
-      }
-      .burger--toggler span {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: #0e0f0e;
-        transition : opacity 0.1s ease-out , transform 0.3s ease-out;
-      }
-      .l1{
-        transform: translateY(-12px);
-      }
-      .l3{
-        transform: translateY(12px);
-      }
-      .burger--toggler.active .l1{
-        transform: translateY(0px) rotate(135deg);
-      }
-      .burger--toggler.active .l2{
-        opacity: 0;
-      }
-      .burger--toggler.active .l3{
-        transform: translateY(0px) rotate(-135deg);
-      }
-     
+    .Mobile nav {
+        display: flex;
+        justify-content: space-around;
+        width: max-content;
+    }
+
+    .Mobile ul{
+        flex-wrap: nowrap;
+        width: max-content
+    }
+
+    .Mobile li {
+        margin: 5px 0;
+    }
+
+    .Mobile a {
+        font-size: 15px;
+    }
 
     header nav:not(.Mobile) li:not(:has(img)) {
         display: none;
