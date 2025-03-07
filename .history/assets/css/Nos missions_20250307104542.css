@@ -93,10 +93,6 @@ h1 {
     bottom: 0;
 }
 
-.box2 .image-container strong {
-    top: 0;
-}
-
 .custom-box {
     display: flex;
     align-items: center;

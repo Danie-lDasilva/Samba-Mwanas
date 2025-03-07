@@ -71,6 +71,7 @@ h1 {
 .box1 .image-container strong,
 .box2 .image-container strong {
     position: absolute;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     color: black;
@@ -87,14 +88,6 @@ h1 {
     font-style: normal;
     font-size: 20px;
     text-align: center;
-}
-
-.box1 .image-container strong {
-    bottom: 0;
-}
-
-.box2 .image-container strong {
-    top: 0;
 }
 
 .custom-box {
