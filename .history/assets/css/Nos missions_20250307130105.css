@@ -160,10 +160,7 @@ h1 {
         flex: 0 0 100%;
         margin-bottom: 0;
         height: auto;
-    }
-    .image-container img {
-        height: 100%;
-        object-fit: cover;
+        padding-bottom: 75%;
     }
     .custom-box {
         flex-direction: column;
@@ -179,10 +176,6 @@ h1 {
         margin: 10px 0;
     }
     .image-container + .image-container {
-        margin-top: 0;
-    }
-    .box1 .image-container,
-    .box2 .image-container {
-        margin-bottom: 0;
+        margin-top: 0; /* Remove margin between image containers */
     }
 }

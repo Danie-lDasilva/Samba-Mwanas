@@ -160,6 +160,7 @@ h1 {
         flex: 0 0 100%;
         margin-bottom: 0;
         height: auto;
+        padding-bottom: 150%;
     }
     .image-container img {
         height: 100%;

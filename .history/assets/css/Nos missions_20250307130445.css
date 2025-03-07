@@ -160,6 +160,7 @@ h1 {
         flex: 0 0 100%;
         margin-bottom: 0;
         height: auto;
+        padding-bottom: 150%; /* Adjust height for portrait mode */
     }
     .image-container img {
         height: 100%;
@@ -183,6 +184,6 @@ h1 {
     }
     .box1 .image-container,
     .box2 .image-container {
-        margin-bottom: 0;
+        margin-bottom: 0; /* Remove margin between image containers */
     }
 }
