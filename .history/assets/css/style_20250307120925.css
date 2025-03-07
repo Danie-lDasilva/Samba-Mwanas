@@ -99,10 +99,6 @@ header nav {
     width: 100%;
 }
 
-.Mobile {
-    display: none;
-}
-
 .Logo {
     height: 60px;
     width: auto;
@@ -596,49 +592,25 @@ footer p {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         height: auto;
         padding: 10px 20px;
     }
 
-    header .Logo {
-        margin-bottom: 10px;
-    }
-
-    header ul {
-        flex-direction: row;
-        width: 100%;
-    }
-
     header li {
-        margin: 5px 0;
+        margin: 0 5px;
     }
 
-    .Mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .Mobile nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .Mobile li {
-        margin: 5px 0;
-    }
-
-    nav:not(.Mobile) li:not(:has(img)) {
+    header li:has(not(a img)) {
         display: none;
     }
 
     a {
         font-size: 14px;
         padding: 5px 10px;
+    }
+
+    .Logo {
+        height: 40px;
     }
 
     .Landing h1 {
@@ -722,7 +694,7 @@ footer p {
     }
 
     .FooterRéseaux img {
-        width: 40px; /* Augmenter la taille des logos en responsive */
+        width: 30px;
         height: auto;
     }
 
@@ -730,6 +702,10 @@ footer p {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+    }
+
+    .FooterContact p {
+        margin: 10px 0;
     }
 
     .FooterCentre {
