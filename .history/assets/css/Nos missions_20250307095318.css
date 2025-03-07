@@ -111,14 +111,6 @@ h1 {
     rotate: -15deg;
 }
 
-.side2 {
-    rotate: 15deg;
-}
-
-.custom-box h2{
-    font-size: 50px;
-}
-
 .center-text {
     flex: 1;
     text-align: center;

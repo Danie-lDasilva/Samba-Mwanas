@@ -103,20 +103,12 @@ h1 {
 }
 
 .side-image {
-    height: 50%;
+    height: 100%;
     width: auto;
 }
 
 .side1 {
-    rotate: -15deg;
-}
-
-.side2 {
-    rotate: 15deg;
-}
-
-.custom-box h2{
-    font-size: 50px;
+    rotate: 50deg;
 }
 
 .center-text {
